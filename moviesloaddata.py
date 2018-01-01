@@ -3,7 +3,7 @@ import boto3
 import json
 import decimal
 
-dynamodb = boto3.resource('dynamodb')
+dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
 
 table = dynamodb.Table('Movies')
 
