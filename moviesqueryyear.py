@@ -18,10 +18,10 @@ dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
 
 table = dynamodb.Table('Movies')
 
-print("Movies from 1985")
+print("Movies from 2003")
 
 response = table.query(
-    KeyConditionExpression=Key('year').eq(1985)
+    KeyConditionExpression=Key('year').eq(2003)
 )
 
 for i in response['Items']:
