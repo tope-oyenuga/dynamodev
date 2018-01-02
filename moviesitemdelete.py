@@ -31,7 +31,7 @@ try:
         },
         ConditionExpression="info.rating <= :val",
         ExpressionAttributeValues= {
-            ":val": decimal.Decimal(5)
+            ":val": decimal.Decimal(5.5)
         }
     )
 except ClientError as e:
